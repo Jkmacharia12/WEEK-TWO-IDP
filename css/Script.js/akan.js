@@ -1,3 +1,21 @@
+function getAkanName () {
+    var yearOfBirth = document.getElementById("year-input").value;
+    var monthOfBirth = Number(document.getElementById("month-input").value);
+    var dayOfBirth = Number(document.getElementById("day-input").value);
+    var genders = document.getElementsByName("gender");
+    // Gender fuction
+    function getGender () {
+      for (let gender of genders){
+        if (gender.checked){
+          return gender.value;
+        }
+      }
+    }
+  
+    let myGenderValue = getGender();
+    console.log(myGenderValue);
+  
+
 const Female_Names=["Akosua","Adwoa","Abena","Akua","Yaa","Efua","Amba"]
 const Male_Names=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"]
 const Day_Of_Week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
@@ -5,15 +23,9 @@ const Day_Of_Week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","
 //user will be inputing date of birth and gender.
 //Based on the two parameters the application will determine DOW the user was born.
 //Return will be the user Akan name.
-var day=
-var month=
-var year=1980
+var dow= function dayofweek(){Math.floor((((Number(yearOfBirth.slice(0,2))/4)-2*Number(yearOfBirth.slice(0,2))-1)+
+          ((5*Number(yearOfBirth.slice(2,4))/4))+((26*(monthOfBirth+1)/10))+dayOfBirth)%7)}
 
-function Day of the week (CC,DD,MM,YY) {( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(MM+1)/10)) + DD )%7
-var CC=19
-var DD=30
-var MM=6
-var YY=84}
 
 
 
