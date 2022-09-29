@@ -6,9 +6,5 @@ const Day_Of_Week=["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","
 //Based on the two parameters the application will determine DOW the user was born.
 //Return will be the user Akan name.
 
-var Date=prompt("Enter date DD")
-var Month=prompt("Enter month MM")
-var year=prompt("Enter YYYY")
-var Gender=prompt("Enter Male/Female")
 
 
