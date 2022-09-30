@@ -1,7 +1,7 @@
 const Male_Names=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
  const Female_Names=["Akosua","Adwoa","Abenaa","Akua","Yaa","Afua","Ama"];
 
- function getAkanName(){
+ function getAkanName(){  
     const year =document.getElementById("year-input");
     //alert(year.value);
     const month =document.getElementById("month-input");
@@ -12,6 +12,7 @@ const Male_Names=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
     const mydate = new Date(date);
     let day = mydate.getDay();
     let name="";
+    
     if(male.checked){
         name=Male_Names[day];
     }else{
@@ -24,3 +25,4 @@ const Male_Names=["Kwasi","Kwadwo","Kwabena","Kwaku","Yaw","Kofi","Kwame"];
 
 
  }
+ 
