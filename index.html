@@ -5,18 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-<script>
-$(document).ready(function(){
-    // Get value on button click and show alert
-    $("#myBtn").click(function(){
-        var str = $("#myInput").val();
-        alert(str);
-    });
-});
-</script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -25,6 +15,7 @@ $(document).ready(function(){
   <h1>Akan Naming System</h1>
   <p>Enter Date Of Birth And Gender.</p>
   <p>Application will give your Akan name from Ghana.</p>
+
   <form class="myform" onsubmit="return getAkanName()">
     <label for="year-of-birth">
       Year:
@@ -51,12 +42,12 @@ $(document).ready(function(){
     <input id="get-name" type="submit" name="" value="Generate name">
     <br><br>
   </form>
-  <form onsubmit="return clearInput()">
+  <!-- <form onsubmit="return clearInput()">
     <input class="clear" type="submit" value="Clear input">
-  </form>
+  </form> -->
 
 
-  <h4 id = display-name><strong>Your Akan name will be displayed below:</strong></h4>
+  <h4 id ="display-name"><strong>Your Akan name will be displayed below:<span id="name"></span>  </strong></h4>
   <p id="result"></p>
 </div>
 </div>
